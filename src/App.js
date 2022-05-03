@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import APIpage from "./pages/APIpage";
+import Home from "./pages/Home";
+import ToDolist from "./pages/ToDolist";
+import { ThemeProvider } from "styled-components";
+import theme from "./utils.js/util";
 
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        {/* 메인 페이지입니다 */}
+        <Route path="/" element={<Home/>} />
+        {/* to do list 페이지입니다 */}
+        <Route path="/todolist" element={<ToDolist/>} />
+        {/* API 활용 페이지입니다 */}
+        <Route path="/api" element={<APIpage/>} />
+      </Routes>
     </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+## Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [react 개념](#React) 
+- [To Do list](#To-Do-list)
+- [API test](#API-test)
 
-## Available Scripts
+<br/>
+<br/>
+<br/>
 
-In the project directory, you can run:
+# React 
 
-### `npm start`
+자바스크립트 기반의 UI 라이브러리로 컴포넌트 단위로 구성하다보니 역할과 기능으로 따로 관리하기 용이하고 반복되는 부분은 재사용을 할 수도 있어서 효율적인 코드를 쓸 수 있고 생산성도 극대화 할 수 있습니다. 가상돔을 사용해서 렌더링하기 때문에 지속적으로 데이터 변화하는 대규모 어플리케이션 구축에 용이합니다. 리액트 컴포넌트에는 라이프 사이클이라는 것이 있는데, 컴포넌트가 DOM에 실행되고(마운트), 업데이트되고 마지막으로 제거되는(언마운트) 일련의 과정을 의미합니다. 클래스형 컴포넌트만 유의미했지만 지금은 함수형 컴포넌트에서도 react hook인 useState, useEffect 로 라이프사이클을 비슷하게 구현할 수 있습니다. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+리액트에서 말하는 상태 관리는 컴포넌트 간에 데이터를 공유하고 상호작용하는 방법, 동적으로 표현되는 데이터 관리를 말합니다. 컴포넌트간에 props가 전달되고, 컴포넌트 안에서 state로 동적인 데이터가 관리됩니다. 리액트는 단반향 데이터 흐름을 지향하는데, 상위 컴포넌트에서 하위 컴포넌트로 props를 내려주면서 관리했습니다. Flux라는 패턴이 나오고, 계속해서 상태가 복잡한 웹 어플리케이션이 생겨나면서 메소드 양이 많아지고 코드 가독성이 떨어진다는 단점이 있었습니다. 전역 상태 관리에 대한 필요성이 커지며 redux라는 전역상태 관리 라이브러리가 등장했습니다. 컴포넌트간의 상태들을 한 군데 모아놓고 한 곳에서 전역적으로 데이터를 보내는 방식입니다. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br/>
+<br/>
+<br/>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# To Do list
+- form 과 list 컴포넌트를 두 개로 나눠서 구현했습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<p align="center" >
+<img src="https://blog.kakaocdn.net/dn/bnOC7t/btrBcdwj7ij/BuUEg0TXZM5kMjKj760jqK/img.gif" alt="list" width="80%" >
+</p>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br/>
+<br/>
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# API test 
+- `get` method를 사용하여 user list 데이터를 가지고 왔습니다. 
+- 두 페이지 모두 가지고 왔고, info 버튼을 누르면 해당 user의 이름을 확인할 수 있습니다. 
+- 특정 모바일 사이즈로 넘어가면 레이아웃이 변경됩니다. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br/>
+<p align="center" >
+<img src="https://blog.kakaocdn.net/dn/bldLaA/btrBaQ2UfOo/FXebjjeKVE7OE78BQ6Cf51/img.gif" alt="list" width="80%" >
+</p>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br/>
+<br/>
+<br/>
+<br/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 실행 방법
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    npm install
+    npm start
+   
 
-### Code Splitting
+<br/>
+<br/>
+<br/>
+<br/>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
