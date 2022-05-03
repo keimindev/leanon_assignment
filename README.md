@@ -21,6 +21,7 @@
 
 
 # To Do list
+- React, styled-components
 - form 과 list 컴포넌트를 두 개로 나눠서 구현했습니다.
 
 <br/>
@@ -34,6 +35,7 @@
 
 
 # API test 
+-- React, styled-components, Axios
 - `get` method를 사용하여 user list 데이터를 가지고 왔습니다. 
 - 두 페이지 모두 가지고 왔고, info 버튼을 누르면 해당 user의 이름을 확인할 수 있습니다. 
 - 특정 모바일 사이즈로 넘어가면 레이아웃이 변경됩니다. 
